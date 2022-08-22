@@ -1,0 +1,53 @@
+@import 'reset.scss';
+
+body {
+    background-color: #222021;
+    color: #f5f5f5;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    width: 1170px;
+    margin: auto;
+}
+
+.header {
+    margin: 50px 0px 75px;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.logo {
+
+    &__image {
+        width: 197px;
+    }
+}
+
+.menu {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+
+    &__list {
+        display: flex;
+        align-items: center;
+        margin: 0px -30px;
+    }
+
+    &__item {
+        margin: 0px 30px;
+
+        a {
+            color: #f5f5f5;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
