@@ -86,6 +86,7 @@ h6 {
 
 body {
   background-color: #222021;
+  background-image: url("/images/background.jpg");
   color: #f5f5f5;
   font-size: 20px;
   font-family: 'Inter', sans-serif;
@@ -146,6 +147,7 @@ body {
 .hero {
   position: relative;
   padding: 75px 0;
+  margin-bottom: 240px;
 }
 
 .hero__background {
@@ -222,4 +224,68 @@ body {
 
 .hero__image:nth-child(2) {
   align-self: flex-start;
+}
+
+.wood-types {
+  margin-bottom: 240px;
+}
+
+.wood-types__title {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 90px;
+  line-height: 130%;
+  text-transform: uppercase;
+  margin-bottom: 100px;
+}
+
+.wood-types__types {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.wood-type__image {
+  width: 270px;
+  height: 270px;
+  object-fit: cover;
+  border-radius: 42px;
+  margin-bottom: 50px;
+}
+
+.wood-type__title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 120%;
+  margin-bottom: 30px;
+}
+
+.wood-type__specification {
+  position: relative;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 120%;
+  margin-bottom: 25px;
+  padding-left: 45px;
+}
+
+.wood-type__specification:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  transform: translateY(-50%);
+  background-image: url("/images/checkmark.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.wood-type__specification_negative:before {
+  background-image: url("/images/cross.svg");
+}
+
+.wood-type__specification:last-child {
+  margin-bottom: 0;
 }

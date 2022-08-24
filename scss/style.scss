@@ -2,6 +2,7 @@
 
 body {
     background-color: #222021;
+    background-image: url('/images/background.jpg');
     color: #f5f5f5;
     font-size: 20px;
     font-family: 'Inter', sans-serif;
@@ -65,6 +66,7 @@ body {
 .hero {
     position: relative;
     padding: 75px 0;
+    margin-bottom: 240px;
 
     &__background {
         position: absolute;
@@ -139,6 +141,76 @@ body {
 
         &:nth-child(2) {
             align-self: flex-start;
+        }
+    }
+}
+
+.wood-types {
+    margin-bottom: 240px;
+
+    &__title {
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 90px;
+        line-height: 130%;
+        text-transform: uppercase;
+        margin-bottom: 100px;
+    }
+
+    &__types {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+}
+
+.wood-type {
+
+    &__image {
+        width: 270px;
+        height: 270px;
+        object-fit: cover;
+        border-radius: 42px;
+        margin-bottom: 50px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 120%;
+        margin-bottom: 30px;
+    }
+
+    &__specification {
+        position: relative;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 120%;
+        margin-bottom: 25px;
+        padding-left: 45px;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 25px;
+            height: 25px;
+            transform: translateY(-50%);
+            background-image: url('/images/checkmark.svg');
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        &_negative {
+            
+            &:before {
+                background-image: url('/images/cross.svg');
+            }
+        }
+
+        &:last-child {
+            margin-bottom: 0;
         }
     }
 }
