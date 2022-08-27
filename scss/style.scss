@@ -31,13 +31,25 @@ body {
         background-image: url('../images/hero-background.jpg');
         width: 100%;
         height: 1080px;
+        filter: drop-shadow(0px 4px 52px rgba(245, 245, 245, 0.17));
     }
 }
 
 .logo {
+    padding: 3px;
+    display: block;
+    width: 200px;
+    height: 88px;
+    border-radius: 5px;
+
+    &:focus {
+        outline: 2px solid #f5f5f5;
+    }
 
     &__image {
-        width: 197px;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
     }
 }
 
@@ -60,6 +72,10 @@ body {
             color: #f5f5f5;
 
             &:hover {
+                text-decoration: underline;
+            }
+
+            &:focus {
                 text-decoration: underline;
             }
         }
@@ -148,6 +164,10 @@ body {
     &:hover {
         background: #577092;
     }
+
+    &:focus {
+        outline: 3px solid #f5f5f5;
+    }
 }
 
 .wood-types {
@@ -227,6 +247,12 @@ body {
 
     &__button {
         background-color: transparent;
+        border-radius: 50%;
+        padding: 10px;
+
+        &:focus {
+            outline: 3px solid #f5f5f5;
+        }
     }
 
     &__slide {
@@ -257,6 +283,11 @@ body {
         border: 4px solid #728BAD;
         background-color: transparent;
         margin-right: 18px;
+
+
+        &:focus {
+            outline: 2px solid #f5f5f5;
+        }
 
         &:last-child {
             margin-right: 0;
@@ -385,6 +416,7 @@ body {
 
     &__image {
         position: absolute;
+        z-index: -1;
         top: 75%;
         transform: rotate(-27deg);
         right: 0;
@@ -417,6 +449,86 @@ body {
         &_text {
             margin-bottom: 40px;
             resize: none;
+        }
+    }
+}
+
+.footer {
+    background-color: #222021;
+    box-shadow: 0px -6px 52px rgba(245, 245, 245, 0.34);
+    padding: 70px 0 60px;
+
+    &__wrapper {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    &__left-side {
+        width: 320px;
+    }
+
+    &__logo {
+        margin-bottom: 60px;
+    }
+
+    &__privacy-link {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 140%;
+        color: #F5F5F5;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        &:focus {
+            text-decoration: underline;
+        }
+    }
+
+    &__phone {
+        width: 370px;
+        display: flex;
+        align-items: flex-start;
+        margin-left: auto;
+        margin-right: 30px;
+
+        svg {
+            margin-right: 15px;
+        }
+
+        a {
+            color: #f5f5f5;
+
+            &:hover {
+                text-decoration: underline;
+            }
+
+            &:focus {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__address {
+        width: 370px;
+        display: flex;
+        align-items: flex-start;
+
+        svg {
+            margin-right: 15px;
+        }
+    
+        a {
+            color: #f5f5f5;
+    
+            &:hover {
+                text-decoration: underline;
+            }
+    
+            &:focus {
+                text-decoration: underline;
+            }
         }
     }
 }
