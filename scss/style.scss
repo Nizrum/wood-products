@@ -649,6 +649,10 @@ body {
             padding-left: 0px;
         }
 
+        &__title {
+            margin-bottom: 40px;
+        }
+
         &__background {
             width: calc(100% - ((100% - 900px) / 2));
         }
@@ -705,6 +709,217 @@ body {
         &__phone {
             margin: 0;
             margin-bottom: 20px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+
+    body {
+        font-size: 24px;
+    }
+
+    .container {
+        width: 700px;
+    }
+
+    .header {
+
+        &__logo {
+            margin-right: 40px;
+        }
+
+        &__background {
+            height: 900px;
+        }
+    }
+
+    .logo {
+        width: 160px;
+        height: 70px;
+        flex-shrink: 0;
+    }
+
+    .menu {
+        width: 100%;
+
+        &__list {
+            margin: 0;
+            justify-content: space-between;
+        }
+
+        &__item {
+            margin: 0;
+            font-size: 18px;
+        }
+    }
+
+    .hero {
+        margin-bottom: 200px;
+
+        &__wrapper {
+            padding: 60px;
+            padding-left: 0px;
+        }
+
+        &__text {
+            width: 65%;
+        }
+
+        &__paragraph {
+            width: 300px;
+        }
+
+        &__images {
+            width: 35%;
+        }
+
+        &__image {
+            width: 140px;
+            height: 140px;
+            border-radius: 30px;
+        }
+
+        &__background {
+            width: calc(100% - ((100% - 700px) / 2));
+        }
+    }
+
+    .title {
+        font-size: 60px;
+    }
+
+    .button {
+        font-size: 24px;
+    }
+
+    .wood-types {
+        margin-bottom: 200px;
+    }
+
+    .wood-type {
+        width: 30%;
+
+        &__image {
+            width: 180px;
+            height: 180px;
+            border-radius: 30px;
+        }
+
+        &__specification {
+            padding-left: 40px;
+        }
+    }
+
+    .works {
+        margin-bottom: 200px;
+    }
+
+    .slider {
+
+        &__slide {
+            width: 500px;
+            height: 350px;
+            border-radius: 30px;
+        }
+
+        &__bullets {
+            margin-top: 50px;
+        }
+    }
+
+    .advantages {
+        margin-bottom: 200px;
+
+        &__image {
+            width: 40%;
+            border-radius: 30px;
+            margin-right: 0;
+        }
+
+        &__text {
+            width: 55%;
+        }
+
+        &__list {
+            margin-bottom: 50px;
+        }
+    }
+
+    .about {
+        margin-bottom: 200px;
+
+        &__wrapper {
+            padding: 60px;
+            padding-left: 0;
+        }
+
+        &__text {
+            width: 60%;
+            margin-right: 0;
+        }
+
+        &__image {
+            width: 160px;
+            height: 160px;
+            border-radius: 30px;
+
+            &_big {
+                width: 200px;
+                height: 200px;
+                border: 12px solid #1E0C06;
+            }
+        }
+
+        &__background {
+            width: calc(100% - ((100% - 700px) / 2));
+        }
+    }
+
+    .contact {
+        margin-bottom: 200px;
+
+        &__paragraph {
+            width: 35%;
+        }
+
+        &__image {
+            width: 300px;
+            top: 90%;
+        }
+    }
+
+    .form {
+        width: 60%;
+        margin: 0;
+
+        &__input {
+            border-radius: 30px;
+            font-size: 24px;
+
+            &::placeholder {
+                font-size: 24px;
+            }
+        }
+    }
+
+    .footer {
+        padding: 50px 0px;
+
+        &__phone {
+            
+            svg {
+                height: 40px;
+                width: 40px;
+            }
+        }
+
+        &__address {
+            
+            svg {
+                height: 40px;
+                width: 40px;
+            }
         }
     }
 }

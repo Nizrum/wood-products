@@ -680,6 +680,9 @@ body {
     padding: 75px;
     padding-left: 0px;
   }
+  .about__title {
+    margin-bottom: 40px;
+  }
   .about__background {
     width: calc(100% - ((100% - 900px) / 2));
   }
@@ -718,5 +721,161 @@ body {
   .footer__phone {
     margin: 0;
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  body {
+    font-size: 24px;
+  }
+  .container {
+    width: 700px;
+  }
+  .header__logo {
+    margin-right: 40px;
+  }
+  .header__background {
+    height: 900px;
+  }
+  .logo {
+    width: 160px;
+    height: 70px;
+    flex-shrink: 0;
+  }
+  .menu {
+    width: 100%;
+  }
+  .menu__list {
+    margin: 0;
+    justify-content: space-between;
+  }
+  .menu__item {
+    margin: 0;
+    font-size: 18px;
+  }
+  .hero {
+    margin-bottom: 200px;
+  }
+  .hero__wrapper {
+    padding: 60px;
+    padding-left: 0px;
+  }
+  .hero__text {
+    width: 65%;
+  }
+  .hero__paragraph {
+    width: 300px;
+  }
+  .hero__images {
+    width: 35%;
+  }
+  .hero__image {
+    width: 140px;
+    height: 140px;
+    border-radius: 30px;
+  }
+  .hero__background {
+    width: calc(100% - ((100% - 700px) / 2));
+  }
+  .title {
+    font-size: 60px;
+  }
+  .button {
+    font-size: 24px;
+  }
+  .wood-types {
+    margin-bottom: 200px;
+  }
+  .wood-type {
+    width: 30%;
+  }
+  .wood-type__image {
+    width: 180px;
+    height: 180px;
+    border-radius: 30px;
+  }
+  .wood-type__specification {
+    padding-left: 40px;
+  }
+  .works {
+    margin-bottom: 200px;
+  }
+  .slider__slide {
+    width: 500px;
+    height: 350px;
+    border-radius: 30px;
+  }
+  .slider__bullets {
+    margin-top: 50px;
+  }
+  .advantages {
+    margin-bottom: 200px;
+  }
+  .advantages__image {
+    width: 40%;
+    border-radius: 30px;
+    margin-right: 0;
+  }
+  .advantages__text {
+    width: 55%;
+  }
+  .advantages__list {
+    margin-bottom: 50px;
+  }
+  .about {
+    margin-bottom: 200px;
+  }
+  .about__wrapper {
+    padding: 60px;
+    padding-left: 0;
+  }
+  .about__text {
+    width: 60%;
+    margin-right: 0;
+  }
+  .about__image {
+    width: 160px;
+    height: 160px;
+    border-radius: 30px;
+  }
+  .about__image_big {
+    width: 200px;
+    height: 200px;
+    border: 12px solid #1E0C06;
+  }
+  .about__background {
+    width: calc(100% - ((100% - 700px) / 2));
+  }
+  .contact {
+    margin-bottom: 200px;
+  }
+  .contact__paragraph {
+    width: 35%;
+  }
+  .contact__image {
+    width: 300px;
+    top: 90%;
+  }
+  .form {
+    width: 60%;
+    margin: 0;
+  }
+  .form__input {
+    border-radius: 30px;
+    font-size: 24px;
+  }
+  .form__input::placeholder {
+    font-size: 24px;
+  }
+  .footer {
+    padding: 50px 0px;
+  }
+  .footer__phone svg {
+    height: 40px;
+    width: 40px;
+  }
+  .footer__address svg {
+    height: 40px;
+    width: 40px;
   }
 }
