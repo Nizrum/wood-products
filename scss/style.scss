@@ -972,7 +972,7 @@ body {
         }
 
         &__background {
-            width: 90%;
+            width: 95%;
         }
     }
 
@@ -1089,7 +1089,7 @@ body {
         }
 
         &__background {
-            width: 90%;
+            width: 95%;
         }
     }
 
@@ -1136,6 +1136,136 @@ body {
 
         &__address-items {
             justify-content: flex-start;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+
+    .container {
+        width: 90%;
+    }
+
+    .header {
+
+        &__wrapper {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        &__logo {
+            margin-bottom: 30px;
+        }
+
+        &__background {
+            height: 830px;
+        }
+    }
+
+    .menu {
+        width: 100%;
+    }
+
+    .hero {
+
+        &__title {
+            margin-bottom: 20px;
+        }
+
+        &__paragraph {
+            margin-bottom: 40px;
+        }
+
+        &__image {
+            width: 120px;
+            height: 120px;
+            border-radius: 24px;
+        }
+
+        &__background {
+            width: 100%;
+            border-radius: 0;
+        }
+    }
+
+    .title {
+        font-size: 36px;
+    }
+
+    .wood-types {
+
+        &__title {
+            width: 100%;
+        }
+    }
+
+    .wood-type {
+
+        &__image {
+            border-radius: 24px;
+        }
+    }
+
+    .slider {
+
+        &__slide {
+            border-radius: 24px;
+        }
+    }
+
+    .advantages {
+
+        &__image {
+            border-radius: 24px;
+        }
+    }
+
+    .about {
+
+        &__wrapper {
+            flex-direction: column;
+        }
+
+        &__text {
+            margin-bottom: 40px;
+        }
+
+        &__images {
+            width: 100%;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+
+        &__image {
+            border-radius: 24px;
+            margin-bottom: 25px;
+
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            &_big {
+                margin-top: 0;
+                margin-right: 0;
+                border: none;
+                width: 120px;
+                height: 120px;
+            }
+        }
+
+
+        &__background {
+            width: 100%;
+            border-radius: 0;
+        }
+    }
+
+    .contact {
+
+        &__image {
+            right: 7%;
         }
     }
 }
