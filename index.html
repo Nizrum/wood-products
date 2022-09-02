@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -31,16 +31,16 @@
                 <nav class="header__menu menu">
                     <ul class="menu__list">
                         <li class="menu__item">
-                            <a href="#">Галерея</a>
+                            <a href="#works">Галерея</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#">Цены на услуги</a>
+                            <a href="#wood-types">Цены на услуги</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#">О нас</a>
+                            <a href="#about">О нас</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#">Контакты</a>
+                            <a href="#contact">Контакты</a>
                         </li>
                     </ul>
                 </nav>
@@ -67,7 +67,7 @@
         </div>
         <div class="hero__background"></div>
     </section>
-    <section class="wood-types">
+    <section class="wood-types" id="wood-types">
         <div class="wood-types__container container">
             <div class="wood-types__wrapper">
                 <h2 class="wood-types__title title">
@@ -104,7 +104,7 @@
             </div>
         </div>
     </section>
-    <section class="works">
+    <section class="works" id="works">
         <div class="works__container container">
             <div class="works__wrapper">
                 <h2 class="works__title title">Наши работы</h2>
@@ -119,6 +119,12 @@
                         <div class="slider__slide">
                             <img src="images/slide-1.jpg" alt="Кухонный гарнитур из дерева" class="slider__image">
                         </div>
+                        <div class="slider__slide">
+                            <img src="images/slide-2.jpeg" alt="Кухонный гарнитур из дерева" class="slider__image">
+                        </div>
+                        <div class="slider__slide">
+                            <img src="images/slide-3.jpeg" alt="Кухонный гарнитур из дерева" class="slider__image">
+                        </div>
                     </div>
                     <button class="slider__button slider__button_next">
                         <svg width="57" height="54" viewBox="0 0 57 54" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -127,9 +133,9 @@
                         </svg>
                     </button>
                     <div class="slider__bullets">
-                        <button class="slider__bullet"></button>
-                        <button class="slider__bullet slider__bullet_active"></button>
-                        <button class="slider__bullet"></button>
+                        <button class="slider__bullet" data-slide-index="0"></button>
+                        <button class="slider__bullet" data-slide-index="1"></button>
+                        <button class="slider__bullet" data-slide-index="2"></button>
                     </div>
                 </div>
             </div>
@@ -163,7 +169,7 @@
             </div>
         </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
         <div class="about__container container">
             <div class="about__wrapper">
                 <div class="about__text">
@@ -186,7 +192,7 @@
         </div>
         <div class="about__background"></div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="contact__container container">
             <div class="contact__wrapper">
                 <h2 class="contact__title title">

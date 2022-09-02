@@ -334,6 +334,7 @@ body {
 }
 
 .slider__slide {
+  display: none;
   width: 970px;
   height: 700px;
   border-radius: 42px;
@@ -344,6 +345,10 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.slider__slide_active {
+  display: block;
 }
 
 .slider__bullets {
