@@ -958,7 +958,6 @@ body {
   }
   .slider__slide {
     width: 100%;
-    height: 70%;
   }
   .slider__button_prev {
     order: 1;
